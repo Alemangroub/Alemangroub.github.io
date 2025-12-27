@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>شركة الإيمان جروب للمقاولات</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; color: #333; }
         
         header { background-color: #1a1a1a; color: #ffc107; padding: 20px; text-align: center; border-bottom: 4px solid #ffc107; }
         
-        /* القسم الرئيسي مع الصورة التي أرفقتها */
         .hero { 
             background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://r.jina.ai/i/0107297e6be980009c91f63080064500350d03004a000300050c0c010a000000.jpg'); 
             background-size: cover; 
@@ -26,13 +26,40 @@
         .services-grid { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; }
         
         .card { background: white; padding: 30px; border-radius: 10px; width: 300px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-top: 5px solid #ffc107; }
-        .card h4 { color: #1a1a1a; font-size: 1.4rem; }
 
         footer { background-color: #1a1a1a; color: white; text-align: center; padding: 30px 20px; margin-top: 50px; }
-        .contact-btn { background-color: #ffc107; color: #1a1a1a; padding: 12px 30px; text-decoration: none; font-weight: bold; border-radius: 5px; display: inline-block; font-size: 1.2rem; }
+
+        /* تصميم زر الواتساب العائم */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            left: 40px; /* يظهر على اليسار لأن الموقع عربي */
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .whatsapp-float:hover {
+            background-color: #128c7e;
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
+
+    <a href="https://wa.me/201000000000" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <header>
         <h1>الإيمان جروب للمقاولات والتطوير العقاري</h1>
@@ -51,19 +78,17 @@
             </div>
             <div class="card">
                 <h4>المقاولات العامة</h4>
-                <p>تنفيذ هندسي متكامل للمشاريع الكبرى بأعلى معايير الجودة العالمية.</p>
+                <p>تنفيذ هندسي متكامل للمشاريع الكبرى بأعلى معايير الجودة.</p>
             </div>
             <div class="card">
                 <h4>التصميم والتنفيذ</h4>
-                <p>تصميمات معمارية فريدة وتنفيذ دقيق لكل التفاصيل الإنشائية.</p>
+                <p>تصميمات معمارية فريدة وتنفيذ دقيق لكل التفاصيل.</p>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>الإيمان جروب - خبرة عريقة في عالم التشييد والبناء</p>
-        <a href="#" class="contact-btn">اطلب استشارة مجانية الآن</a>
-        <p style="margin-top: 20px;">© 2025 الإيمان جروب. جميع الحقوق محفوظة.</p>
+        <p>© 2025 الإيمان جروب. جميع الحقوق محفوظة.</p>
     </footer>
 
 </body>
